@@ -1,6 +1,3 @@
-//@author dsaavedra
-import apimock from './apimock';
-
 
 
 var funcionPrivadaMela = function (funcion) {
