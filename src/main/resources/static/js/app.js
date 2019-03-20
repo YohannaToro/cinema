@@ -1,15 +1,20 @@
+app = (function () {
+    console.log("holi");
 
-
-var funcionPrivadaMela = function (funcion) {
-    var name = funcion[0];
-    var funciones = funcion[1];
-     
     return {
-        setCinemaName(name){
-            this.name=name;
+
+        getCinemaByName:function(name){
+            return apiclient.getCinemaByName(name, function (cinemas) {
+                var table = $("#tableCinemas");
+                var cines = cinemas.functions;
+                for (var i = 0; i < cines.length; i++) {
+                    table.append("<tr><td>" + cines[i].date + "</td><td>" + cines[i].movie.name + "</td><td>" + cinemas.name + "</td><td>" + cines[i].seats.length + "</td>")
+                }
+                console.log(cinemas);
+            });
         }
-    };
+    }
 
-};
+})();
 
-  apimock.getCinemaByName(Cine93,hideName);
+

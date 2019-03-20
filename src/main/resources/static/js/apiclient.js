@@ -1,8 +1,8 @@
 apiclient = (function() {
 
 	return {
-		getCinemaByName : function(name, callback) {
-			$.get("cinema/" + name, function(data) {
+		getCinemaByName : function(cinema, callback) {
+			$.get("cinemas/" + cinema, function(data) {
 				callback(data);
 			});
 		}

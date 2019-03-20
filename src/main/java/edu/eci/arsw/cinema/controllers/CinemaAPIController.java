@@ -43,7 +43,7 @@ public ResponseEntity<?> getCinemaByName(@PathVariable("name") String name) thro
             return new ResponseEntity<>(e.getLocalizedMessage(),HttpStatus.NOT_FOUND);
     }
 
-} 
+}
 @GetMapping("/{name}/{date}")
 public ResponseEntity<?> getCinemaByNameAndDadte(@PathVariable("name") String name,@PathVariable("date") String date) throws CinemaPersistenceException{
 
