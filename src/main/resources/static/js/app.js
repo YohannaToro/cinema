@@ -5,15 +5,25 @@ app = (function () {
 
         getCinemaByName:function(name){
             return apiclient.getCinemaByName(name, function (cinemas) {
-                var table = $("#tableCinemas");
+                
                 var cines = cinemas.functions;
                 for (var i = 0; i < cines.length; i++) {
-                    table.append("<tr><td>" + cines[i].date + "</td><td>" + cines[i].movie.name + "</td><td>" + cinemas.name + "</td><td>" + cines[i].seats.length + "</td>")
+                    $("#tableCinemas").append("<tr><td>" + cines[i].date + "</td><td>" + cines[i].movie.name + "</td><td>" + cinemas.name + "</td><td>" + cines[i].seats.length + "</td>")
                 }
-                console.log(cinemas);
+                
             });
-        }
+        }/*,
+        getCinemaSeats:function(fil,col){
+            
+            for(var i=0;i<fil;i++){
+                for(var j=0;j<col;j++){
+                    $("#tableSeats")
+                }
+            }
+
+        }*/
     }
+
 
 })();
 

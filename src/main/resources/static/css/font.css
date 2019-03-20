@@ -1,13 +1,9 @@
-body {
-    margin: 0;
-    padding: 0;
-    background: #ffffff;
-}
 
 .buscar-caja {
     position: absolute;
-    top: 20%;
-    left: 50%;
+    bottom: 80%;
+    left: 80%;
+    
     transform: translate(-50%, -50%);
     background: #2f3640;
     height: 40px;
@@ -16,7 +12,7 @@ body {
 }
 
 .buscar-caja:hover > .buscar-txt {
-    width: 240px;
+    width: 180px;
     padding: 0 6px;
 }
 
@@ -28,9 +24,10 @@ body {
 .buscar-btn {
     color: #e84118;
     float: right;
-    width: 40px;
-    height: 40px;
+    width: 8px;
+    height: 20px;
     border-radius: 50%;
+    border-color: #2f3640;
     background: #2f3640;
     display: flex;
     justify-content: center;
@@ -52,10 +49,8 @@ body {
     padding: 0;
     color: white;
     font-size: 16px;
-    transition: 0.4s;
+    transition: 0.2s;
     line-height: 40px;
     width: 0px;
     font-weight: bold;
 }
-
-﻿

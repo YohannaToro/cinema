@@ -39,7 +39,7 @@ body:after {
 .content {
      z-index: 1;
      position: relative;
-margin:5px;
+margin:auto;
 }
 
 h1 {
@@ -189,9 +189,9 @@ a:hover {
 
 }
 .neon-text p{
-    font-size: 72px;
+    font-size: 92px;
     font-family: poppins;
-    color: #fff;
+    color: red;
     font-weight: lighter;
 }
 .myBtn {
@@ -201,9 +201,24 @@ a:hover {
     color: white;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: block;
+    padding: 24px 48px;
+
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 6px;
+ 
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    background: none;
+    z-index: 1;
+    cursor: crosshair;
+    transition: 0.8s ease-out;
 }
 
-button {
+/*button {
     display: block;
     padding: 24px 48px;
     font-family: Poppins;
@@ -219,7 +234,7 @@ button {
     z-index: 1;
     cursor: crosshair;
     transition: 0.8s ease-out;
-}
+}*/
 
 .myBtn:hover {
     color: #101010;
@@ -259,6 +274,7 @@ display: inline-block;
     font-family: Poppins;
     position: absolute;
     top: 12%;
+    
     left: 50%;
     transform: translate(-50%, -50%);
 }
