@@ -41,7 +41,9 @@ body:after {
      position: relative;
 margin:auto;
 }
-
+.table-responsive{
+    z-index:1;
+}
 h1 {
      color: #e3e3e3 !important;
      font-family: "Playfair Display" !important;
@@ -138,7 +140,12 @@ a:hover {
 .card8.cardd:hover::before {
      background: url(mec.jpg);
 }
-
+.btn-seat {
+    background-color: transparent;
+    border-color: transparent;
+    width: auto;
+    align-content: center;
+}
 @keyframes anim {
      0% {
           opacity: 0;
@@ -278,7 +285,12 @@ display: inline-block;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
+.tabla1{
+    left: 20%;
+}.
+ tabla2{
+    right:20%;
+ }
 
 
 
