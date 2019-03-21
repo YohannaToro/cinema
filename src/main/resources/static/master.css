@@ -285,12 +285,13 @@ display: inline-block;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.tabla1{
-    left: 20%;
-}.
- tabla2{
-    right:20%;
- }
+
+.tablas1{
+    
+    float: left;
+    z-index: 1;
+}
+
 
 
 
